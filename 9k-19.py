@@ -9,9 +9,11 @@ def policz(txt, znak): #definicja funkcji, która zawiera 2 zmienne
             licznik += 1 # dodaj do licznika 1
     return licznik #zwróc licznik
 
-#print(policz(tekst.lower(), "z")) # funkca policz, która z tekstu wyszuka wystąpienia "a"
+#print(policz(tekst.lower(), "z")) # funkca policz, która z tekstu 
+# wyszuka wystąpienia "a"
 
-for z in "abcdefghijklmnoprstuwxyz":
-    ile = policz(tekst.lower(), z)
-    procent = 100 * ile / len(tekst)
-    print("Znak " + "{0} - {1} - {2}%".format(z.upper(), ile, round(procent, 2)))
+for z in "abcdefghijklmnoprstuwxyz":  #dla zmiennej w liście 
+    ile = policz(tekst.lower(), z)  # funckji ile przypisz funckję policz(tekst z malych liter, oraz zmienna z)
+    procent = 100 * ile / len(tekst) #procent to wartość 100 pomnożona przez ilość wsyąpień danego znaku przez długość tekstu
+    print("Znak " + "{0} - {1} - {2}%".format(z.upper(), ile, round(procent, 2))) #wypisz znak, ilość wystąpień oraz zaookrąglij wartość procentową
+
