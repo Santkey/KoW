@@ -1,10 +1,10 @@
 #dekoratory
 
-def decorator(func):
-    def wrapper(): #opakowanie
-        print("-------------")
+def decorator(func): #zdefiniowanie funkcji dekorator dla funkcji (func)
+    def wrapper(): #definicja opakowania
+        print("opakowanie")
         func()
-        print("-------------")
+        print("opakowanie")
     return wrapper
 
 def hello():
@@ -12,3 +12,9 @@ def hello():
 
 hello = decorator(hello)
 hello()
+
+@decorator
+def witaj():
+    print("Witaj Świecie")
+
+witaj()
