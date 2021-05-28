@@ -1,0 +1,1 @@
+#metody klas oraz maetody klasyczne
